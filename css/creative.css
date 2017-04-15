@@ -1,0 +1,195 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: EatonBold, sans-serif;
+}
+hr {
+  border-color: blue;
+  border-width: 3px;
+  max-width: 50px;
+}
+hr.light {
+  border-color: white;
+}
+a {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: blue;
+}
+a:hover,
+a:focus {
+  color: #0000cc;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+.no-padding {
+  padding: 0;
+}
+.container {
+  padding: 0;
+}
+.btn-default {
+  color: #222222;
+  background-color: white;
+  border-color: white;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: #222222;
+  background-color: #f2f2f2;
+  border-color: #ededed;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  background-image: none;
+}
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+  background-color: white;
+  border-color: white;
+}
+.btn-default .badge {
+  color: white;
+  background-color: #222222;
+}
+.btn-primary {
+  color: white;
+  background-color: blue;
+  border-color: blue;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: white;
+  background-color: #0000e6;
+  border-color: #0000db;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: blue;
+  border-color: blue;
+}
+.btn-primary .badge {
+  color: blue;
+  background-color: white;
+}
+header .container {
+  background-color: #777777;
+}
+header .container p {
+  color: white;
+  font-size: 28px;
+  padding: 30px;
+}
+header .container .banner-buttons {
+  float: right;
+  margin: 10px 30px 0 0;
+}
+header .container .banner-buttons ul > li {
+  list-style-type: none;
+  display: inline;
+  background-color: #eeeeee;
+  padding: 3px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+header .container .banner-buttons ul > li:hover {
+  background-color: rgba(238, 238, 238, 0.7);
+}
+header .container .banner-buttons .active {
+  background-color: #222222;
+}
+header .container .banner-buttons .active:hover {
+  background-color: #222222;
+}
+.bg-white {
+  background-color: white;
+  padding: 30px;
+}
+.bg-white p {
+  font-size: 16px;
+  color: #333333;
+}
+.bg-gray {
+  background-color: #eeeeee;
+}
+.bg-gray p {
+  font-size: 16px;
+  color: #333333;
+}
+.bg-gray h1 {
+  color: blue;
+}
+.bg-gray h3 {
+  color: blue;
+}
