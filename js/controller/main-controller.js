@@ -58,7 +58,7 @@ app.controller('initialPageController', function($scope) {
                 'Correntes de 2 a 2000A;',
                 'Fabricados conforme IEC 60269;',
                 'Tamanhos: 000, 00, 1, 2, 3, 4 e 5;',
-                'Ações: gG/gL - para uso gera e aR - ultrarrápido'
+                'Ações: gG/gL - para uso gera e aR - ultrarrápido.'
             ]
         }
     ];
