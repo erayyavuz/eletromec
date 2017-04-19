@@ -66,6 +66,7 @@ app.controller('initialPageController', function($scope) {
                 'Ações: gG/gL - para uso gera e aR - ultrarrápido'
             ],
             pageLink : 'views/fusivel_nh/view.html'
+            ]
         }
     ];
 });
