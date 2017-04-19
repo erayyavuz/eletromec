@@ -4,7 +4,7 @@ body {
   width: 100%;
 }
 body {
-  font-family: EatonBold, sans-serif;
+  font-family: EatonReg, sans-serif;
 }
 hr {
   border-color: blue;
@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: EatonBold, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 p {
   font-size: 16px;
@@ -192,4 +192,16 @@ header .container .banner-buttons .active:hover {
 }
 .bg-gray h3 {
   color: blue;
+}
+.bg-gray .more-details {
+  height: 220px;
+}
+.bg-gray .more-details span {
+  color: white;
+  background-color: #555555;
+  padding: 10px 25px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
 }

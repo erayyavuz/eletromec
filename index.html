@@ -35,12 +35,22 @@
     <style type="text/css">
         @font-face {
             font-family: "EatonBold";
-            src: url('font/EatonBold.ttf') format("truetype");
+            src: url('font/EatonBold.otf') format("truetype");
+        }
+        @font-face {
+            font-family: "EatonMed";
+            src: url('font/EatonMed.otf') format("truetype");
+        }
+        @font-face {
+            font-family: "EatonReg";
+            src: url('font/EatonReg.otf') format("truetype");
         }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="js/controller/main-controller.js"></script>
 </head>
 
-<body id="page-top">
+<body id="page-top" ng-app="eletromec" ng-controller="initialPageController">
 
     <header>
         <div class="container">
@@ -89,20 +99,24 @@
         </div>
     </section>
 
-    <section>
+    <section ng-repeat="item in itens" style="margin-bottom: 50px;">
         <div class="container bg-gray">
           <div class="row">
-              <div class="col-md-6">
-                  <img src="img/Banner_Linha-ELCM.jpg" alt="" width="100%"/>
+              <div class="col-md-4">
+                  <img src="{{ item.imagePath }}" alt="" />
               </div>
               <div class="col-md-6">
-                  <h1>Linha ELCM</h1>
-                  <h3>Disjuntores em Caixa Moldada</h3>
-                  <p>
-                      A linha de disjuntores em caixa moldada ELCM é um novo </br>
-                      produto desenvolvido com base em normas internacionais, </br>
-                      tecnologia avançada e novo design.
-                  </p>
+                  <h1>{{ item.title }}</h1>
+                  <h3>{{ item.subTitle }}</h3>
+                  <p>{{ item.description }}</p>
+                  <ul>
+                      <li ng-repeat="listItem in item.descriptionList">{{ listItem }}</li>
+                  </ul>
+              </div>
+              <div class="col-md-2">
+                  <div class="more-details">
+                      <span>Saiba mais...</span>
+                  </div>
               </div>
           </div>
         </div>
