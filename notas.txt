@@ -1,0 +1,7 @@
+
+Mariana 19/04
+
+-Alterei o index.html para utilizar a diretiva ng-view para adicionar conteúdo dinâmico na tela (o cabeçalho e o footer repete para cada tela).*
+* Deixei o <header> fixo no index.html apenas para teste. Mais tarde ele deverá ficar no main.html que é o arquivo da página principal
+-Criei arquivos html para cada link de tela.
+-Adicionei o routing para carregar o ngview

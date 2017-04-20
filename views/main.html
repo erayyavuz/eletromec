@@ -1,0 +1,38 @@
+<section>
+    <div class="container bg-white">
+      <div class="row">
+          <div class="col-xs-12">
+              <p>
+                  Linha de produtos Eletromec. A solução perfeita e conﬁável para todas  as necessidades. </br>
+                  Conﬁabilidade, facilidade de instalação, design moderno e alto nível de qualidade. </br>
+                  As soluções inovadoras das linhas de produtos Eletromec são uma excelente alternativa </br>
+                  em custo beneﬁcio para os mais diversiﬁcados projetos, residencial, comercial e </br>
+                  industrial, garantindo máxima eﬁciência e proteção absoluta.
+              </p>
+          </div>
+      </div>
+    </div>
+</section>
+
+<section ng-repeat="item in itens" style="margin-bottom: 50px;">
+    <div class="container bg-gray">
+      <div class="row">
+          <div class="col-md-4">
+              <img src="{{ item.imagePath }}" alt="" />
+          </div>
+          <div class="col-md-6">
+              <h1>{{ item.title }}</h1>
+              <h3>{{ item.subTitle }}</h3>
+              <p>{{ item.description }}</p>
+              <ul>
+                  <li ng-repeat="listItem in item.descriptionList">{{ listItem }}</li>
+              </ul>
+          </div>
+          <div class="col-md-2">
+              <div class="more-details">
+                  <span><a href="{{ item.pageLink }}">Saiba mais...</a></span>
+              </div>
+          </div>
+      </div>
+    </div>
+</section>

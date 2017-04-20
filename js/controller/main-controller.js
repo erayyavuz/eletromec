@@ -1,5 +1,3 @@
-var app = angular.module('eletromec', []);
-
 app.controller('initialPageController', function($scope) {
     $scope.itens = [
         {
@@ -7,7 +5,7 @@ app.controller('initialPageController', function($scope) {
             subTitle: 'Disjuntores em Caixa Moldada',
             description: 'A linha de disjuntores em caixa moldada ELCM é um novo </br> desenvolvido com base em normas internacionais, </br> avançada e novo design.',
             imagePath: 'img/inicial/ELCM.jpg',
-            pageLink : 'views/elmd/view.html'
+            pageLink: '#elcm'
         },
         {
             title: 'Linha ELMD',
@@ -20,7 +18,7 @@ app.controller('initialPageController', function($scope) {
                 'Suporte para instalação em trilho DIN (35mm);',
                 'Indicação da posição de contato.'
             ],
-            pageLink : 'views/elmd/view.html'
+            pageLink: '#elmd'
         },
         {
             title: 'Linha ELPS',
@@ -32,7 +30,7 @@ app.controller('initialPageController', function($scope) {
                 'Uc 275V (Tensão de operação contínua);',
                 'DPS classe II.'
             ],
-            pageLink : 'views/elps/view.html'
+            pageLink: '#elps'
         },
         {
             title: 'Linha ELDR',
@@ -44,7 +42,7 @@ app.controller('initialPageController', function($scope) {
                 'Indicação de falha de fuga;',
                 'Suporte para instalação em trilho DIN (35mm).'
             ],
-            pageLink : 'views/eldr/view.html'
+            pageLink: '#eldr'
         },
         {
             title: 'Fusível Cartucho',
@@ -53,7 +51,7 @@ app.controller('initialPageController', function($scope) {
                 'Solução 10x38mm até 32A;',
                 'Classe de atuação gL/gG.'
             ],
-            pageLink : 'views/fusivel_cartucho/view.html'
+            pageLink: '#fusivel_cartucho'
         },
         {
             title: 'Fusível NH',
@@ -65,8 +63,7 @@ app.controller('initialPageController', function($scope) {
                 'Tamanhos: 000, 00, 1, 2, 3, 4 e 5;',
                 'Ações: gG/gL - para uso gera e aR - ultrarrápido'
             ],
-            pageLink : 'views/fusivel_nh/view.html'
-            ]
+            pageLink: '#fusivel_nh'
         }
     ];
 });
