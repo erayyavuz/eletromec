@@ -31,6 +31,7 @@ a {
     }
 }
 
+// CSS Reset
 h1,
 h2,
 h3,
@@ -38,12 +39,25 @@ h4,
 h5,
 h6 {
     .sans-serif-font;
+	padding: 0;
+	margin: 0;
 }
 
 p {
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 20px;
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	padding: 0;
+	margin: 0;
 }
 
 .text-faded {
@@ -56,6 +70,7 @@ p {
 
 .container {
     padding: 0;
+	margin-bottom: 20px;
 }
 
 // Button Styles
@@ -64,7 +79,11 @@ p {
 }
 
 .btn-primary {
-    .button-variant(white;@theme-primary;@theme-primary);
+    background-color: @theme-primary;
+	color: white;
+	padding: 20px 35px;
+	font-size: 18px;
+	text-decoration: none;
 }
 
 // Eletromec CSS
@@ -110,8 +129,8 @@ header {
     }
 }
 
-.bg-gray {
-    background-color: @gray-lighter;
+.bg-gray-light {
+    background-color: @gray-light;
     p {
         font-size: 16px;
         color: @gray-dark;
@@ -136,12 +155,72 @@ header {
     }
 }
 
-.table-header {
-    background-color: @gray-light;
-    height: 22px;
-    color: white;   
+.bg-gray-dark {
+    background-color: @gray-dark;
+	h1 {
+        color: white;
+		padding: 15px 25px;
+    }
 }
 
-.banner-description {
-    background-color: @gray-medium;
+.banner {
+	padding-bottom: 5px;
+	margin-bottom: 0;
+}
+
+.bg-gray {
+    background-color: @gray;
+	ul {
+		font-size: 18px;
+		color: @gray-dark;
+		padding: 25px 45px;
+		li {
+			list-style-type: square;
+		}
+	}
+
+	ul > ul {
+		padding-top: 2px;
+		li {
+			list-style-type: circle;
+		}
+	}
+}
+
+.section-header {
+	margin-bottom: 0;
+	padding: 3px 25px;
+	span {
+		color: white;
+		font-size: 18px;
+	}
+}
+
+table {
+	margin: 20px 0 0 0!important;
+	border: 2px solid @gray!important;
+	thead > tr > th {
+		background-color: @theme-primary;
+		color: white;
+		font-size: 14px;
+		font-weight: lighter;
+		text-align: center;
+		border: 2px solid @gray!important;
+	}
+	.empty-column, .img-column {
+		background-color: @gray-light;
+		border: 2px solid @gray-light!important;
+		vertical-align: middle!important;
+	}
+	tbody > tr > td {
+		color: black;
+		font-size: 14px;
+		text-align: center;
+		border: 2px solid @gray!important;
+	}
+	tbody > tr > .highlight-column {
+		font-weight: bold;
+		background-color: @blue-highlight;
+		.sans-serif-font;
+	}
 }
