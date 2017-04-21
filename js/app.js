@@ -19,8 +19,7 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
        templateUrl: "/views/elps/view.html"
       })
       .when('/fusivel_cartucho', {
-       templateUrl: "/views/fusivel_cartucho/view.html",
-       controller: 'FusivelCartuchoController'
+       templateUrl: "/views/fusivel_cartucho/view.html"
       })
       .when('/fusivel_nh', {
        templateUrl: "/views/fusivel_nh/view.html"
