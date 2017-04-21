@@ -57,6 +57,7 @@ li {
 .container {
   padding: 0;
   margin-bottom: 20px;
+  width: 960px;
 }
 .btn-default {
   color: #222222;
@@ -114,7 +115,7 @@ fieldset[disabled] .btn-default.active {
   text-decoration: none;
 }
 header .container {
-  background-color: #e6e7e9;
+  background-color: #808285;
 }
 header .container p {
   color: white;
@@ -240,4 +241,139 @@ table tbody > tr > .highlight-column {
   font-weight: bold;
   background-color: #d8e9f1;
   font-family: EatonBold, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+/* Classes Footer - Eaton */
+#footer {
+  background: #eee;
+  position: relative;
+  width: 100%;
+  padding: 19px;
+  float: left;
+  border-top: 2px solid #0089cf;
+}
+#footer a {
+  text-decoration: none;
+  color: #0067cd;
+  line-height: 17px;
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+.footerHeader {
+  font-weight: bold;
+  font-size: 12px;
+}
+.footercolumn {
+  float: left;
+  width: 142px;
+  margin-right: 11px;
+}
+.footercolumn_last {
+  float: left;
+  width: 142px;
+}
+.footercolumn li,
+.footercolumn_last li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  text-decoration: none;
+  list-style: none outside none;
+}
+#FooterImages {
+  clear: left;
+  float: left;
+  position: relative;
+  width: 250px;
+}
+.subheadtitle {
+  padding-top: 10px;
+}
+.subheadtitle p {
+  font-weight: bold;
+}
+.copyright {
+  color: #666;
+}
+.featureR {
+  margin-top: 10px;
+}
+.controlstyle {
+  float: right;
+  margin-right: 86px;
+  width: 100px;
+}
+.controlstyle1 {
+  float: left;
+  width: 60px;
+}
+.controlstyle a {
+  outline: none;
+}
+.controlstyle a img {
+  border-width: 0;
+}
+.controlstyle a.selectedcontrol img {
+  border-bottom: 4px solid darkred;
+}
+#fontIcons {
+  position: relative;
+  padding-bottom: 20px;
+}
+#fontIcons li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+}
+#fontIcons li,
+#fontIcons a {
+  display: block;
+  height: 24px;
+}
+.fontMinus {
+  background: url("/img/public/eaton_sprt_img.png") no-repeat scroll -253px 0 transparent;
+  left: 0;
+  width: 26px;
+}
+.fontPlus {
+  background: url("/img/public/eaton_sprt_img.png") no-repeat scroll -225px 0 transparent;
+  left: 29px;
+  width: 26px;
+}
+.fontResize {
+  left: 60px;
+}
+#printIcons {
+  position: relative;
+  padding-bottom: 20px;
+}
+#printIcons li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+}
+#printIcons li,
+#printIcons a {
+  display: block;
+  height: 24px;
+}
+.printImg {
+  background: url("/img/public/eaton_sprt_img.png") no-repeat scroll -169px 0 transparent;
+  left: 0;
+  width: 26px;
+}
+.mailImg {
+  background: url("/img/public/eaton_sprt_img.png") no-repeat scroll -197px 0 transparent;
+  left: 29px;
+  width: 26px;
+}
+.subheadtitle {
+  color: #333;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
