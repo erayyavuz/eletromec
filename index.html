@@ -49,14 +49,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controller/main-controller.js"></script>
-    <script src="js/controller/fusivel-cartucho-controller.js"></script>
 </head>
 
 <body id="page-top" ng-app="eletromec">
 
   	<!-- CONTEÚDO COMUM A TODAS AS PÁGINAS-->
 
+    <!-- Conteúdo dinâmico -->
     <ng-view></ng-view>
+
+    <div ng-include="'/views/footer.html'"></div>
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
