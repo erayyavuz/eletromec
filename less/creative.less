@@ -128,6 +128,16 @@ header {
         font-size: 16px;
         color: @gray-dark;
     }
+	h1 {
+		color: @theme-primary;
+		font-family: EatonReg;
+	}
+	ul {
+		margin: 20px 0 0 20px;
+		li {
+			color: @gray-dark;
+		}
+	}
 }
 
 .bg-gray-light {
@@ -162,9 +172,7 @@ header {
             bottom: 0;
             right: 15px;
 			transition: all 0.5s;
-			a {
-				color: white;
-			}
+			color: white;
         }
 		span:hover {
 			background-color: fade(@gray-dark, 70%);
@@ -215,14 +223,22 @@ header {
 
 table {
 	margin: 20px 0 0 0!important;
-	border: 2px solid @gray!important;
 	thead > tr > th {
 		background-color: @theme-primary;
 		color: white;
 		font-size: 14px;
 		font-weight: lighter;
 		text-align: center;
+		border: 0!important;
+		vertical-align: middle!important;
+	}
+	tbody > tr > td {
+		color: black;
+		font-size: 14px;
+		text-align: center;
 		border: 2px solid @gray!important;
+		padding: 0!important;
+		vertical-align: middle!important;
 	}
 	.empty-column, .img-column {
 		background-color: @gray-light;
@@ -232,17 +248,14 @@ table {
 			padding: 0 10px;
 		}
 	}
-	tbody > tr > td {
-		color: black;
-		font-size: 14px;
-		text-align: center;
-		border: 2px solid @gray!important;
-		padding: 0!important;
-	}
 	tbody > tr > .highlight-column {
-		font-weight: bold;
 		background-color: @blue-highlight;
 		.sans-serif-font;
+		font-weight: bold;
+	}
+	tbody > tr > .highlight-column-gray {
+		.sans-serif-font;
+		font-weight: bold;
 	}
 	tbody > .highlight-row > td {
 		background-color: @blue-highlight;
@@ -255,6 +268,45 @@ table {
 		.sans-serif-font;
 		font-weight: bold;
 	}
+}
+
+.elcm-table > thead > tr > th:first-child, .elcm-table > tbody > tr > td:first-child {
+	text-align: left;
+	padding-left: 30px!important;
+}
+
+.elcm-table-bottom {
+	border-left:0!important;
+   	border-right: 0!important;
+	margin: 0!important;
+	tbody > tr {
+		td {
+			border-left:0!important;
+		   	border-right: 0!important;
+		}
+		.gray-column {
+			background-color: @gray-dark;
+			padding: 3px 25px;
+			span {
+				color: white;
+				font-size: 18px;
+			}
+		}
+		.text-position-left {
+			text-align: left!important;
+			padding-left: 30px!important;
+		}
+		.header-column {
+			vertical-align: bottom!important;
+			border: 2px solid @gray-light!important;
+			padding: 80px 0 0 0!important;
+		}
+	}
+}
+
+.text-primary {
+	color: @theme-primary;
+	font-weight: bold;
 }
 
 /* Classes Footer - Eaton */
