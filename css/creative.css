@@ -7,7 +7,7 @@ body {
   font-family: EatonReg, sans-serif;
 }
 hr {
-  border-color: blue;
+  border-color: #0089cf;
   border-width: 3px;
   max-width: 50px;
 }
@@ -18,11 +18,11 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: blue;
+  color: #0089cf;
 }
 a:hover,
 a:focus {
-  color: #0000cc;
+  color: #00679c;
 }
 h1,
 h2,
@@ -31,11 +31,22 @@ h4,
 h5,
 h6 {
   font-family: EatonBold, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 p {
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding: 0;
+  margin: 0;
 }
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
@@ -45,9 +56,11 @@ p {
 }
 .container {
   padding: 0;
+  margin-bottom: 20px;
+  width: 960px;
 }
 .btn-default {
-  color: #222222;
+  color: #57585a;
   background-color: white;
   border-color: white;
   -webkit-transition: all 0.35s;
@@ -60,7 +73,7 @@ p {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #222222;
+  color: #57585a;
   background-color: #f2f2f2;
   border-color: #ededed;
 }
@@ -92,58 +105,17 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-default .badge {
   color: white;
-  background-color: #222222;
+  background-color: #57585a;
 }
 .btn-primary {
+  background-color: #0089cf;
   color: white;
-  background-color: blue;
-  border-color: blue;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
-}
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary.focus,
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-  color: white;
-  background-color: #0000e6;
-  border-color: #0000db;
-}
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-  background-image: none;
-}
-.btn-primary.disabled,
-.btn-primary[disabled],
-fieldset[disabled] .btn-primary,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled.focus,
-.btn-primary[disabled].focus,
-fieldset[disabled] .btn-primary.focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
-  background-color: blue;
-  border-color: blue;
-}
-.btn-primary .badge {
-  color: blue;
-  background-color: white;
+  padding: 20px 35px;
+  font-size: 18px;
+  text-decoration: none;
 }
 header .container {
-  background-color: #777777;
+  background-color: #808285;
 }
 header .container p {
   color: white;
@@ -158,7 +130,7 @@ header .container .banner-buttons ul > li {
   list-style-type: none;
   display: inline;
   background-color: #eeeeee;
-  padding: 3px 10px;
+  padding: 1px 10px;
   margin-right: 5px;
   cursor: pointer;
   transition: all 0.5s;
@@ -167,10 +139,10 @@ header .container .banner-buttons ul > li:hover {
   background-color: rgba(238, 238, 238, 0.7);
 }
 header .container .banner-buttons .active {
-  background-color: #222222;
+  background-color: #57585a;
 }
 header .container .banner-buttons .active:hover {
-  background-color: #222222;
+  background-color: #57585a;
 }
 .bg-white {
   background-color: white;
@@ -178,48 +150,126 @@ header .container .banner-buttons .active:hover {
 }
 .bg-white p {
   font-size: 16px;
-  color: #333333;
+  color: #808285;
 }
-.bg-gray {
-  background-color: #eeeeee;
+.bg-gray-light {
+  background-color: #e6e7e9;
 }
-.bg-gray p {
+.bg-gray-light .content-group {
+  margin-top: 20px;
+}
+.bg-gray-light p {
   font-size: 16px;
-  color: #333333;
+  color: #808285;
 }
-.bg-gray h1 {
-  color: blue;
+.bg-gray-light h1 {
+  color: #0089cf;
 }
-.bg-gray h3 {
-  color: blue;
+.bg-gray-light h3 {
+  color: #0089cf;
 }
-.bg-gray .more-details {
+.bg-gray-light ul {
+  padding-left: 20px;
+}
+.bg-gray-light ul > li {
+  font-size: 16px;
+  color: #808285;
+}
+.bg-gray-light .more-details {
   height: 220px;
 }
-.bg-gray .more-details span {
-  color: white;
-  background-color: #555555;
+.bg-gray-light .more-details span {
+  background-color: #808285;
   padding: 10px 25px;
   cursor: pointer;
   position: absolute;
   bottom: 0;
   right: 15px;
+  transition: all 0.5s;
 }
-.table-header {
-  background-color: #777777;
-  height: 22px;
+.bg-gray-light .more-details span a {
   color: white;
 }
-.banner-description {
-  background-color: #d9d9d9;
+.bg-gray-light .more-details span:hover {
+  background-color: rgba(128, 130, 133, 0.7);
+}
+.bg-gray-dark {
+  background-color: #808285;
+}
+.bg-gray-dark h1 {
+  color: white;
+  padding: 15px 25px;
+}
+.banner {
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+.bg-gray {
+  background-color: #d1d2d4;
+}
+.bg-gray ul {
+  font-size: 18px;
+  color: #808285;
+  padding: 25px 45px;
+}
+.bg-gray ul li {
+  list-style-type: square;
+}
+.bg-gray ul > ul {
+  padding-top: 2px;
+}
+.bg-gray ul > ul li {
+  list-style-type: circle;
+}
+.section-header {
+  margin-bottom: 0;
+  padding: 3px 25px;
+}
+.section-header span {
+  color: white;
+  font-size: 18px;
+}
+table {
+  margin: 20px 0 0 0!important;
+  border: 2px solid #d1d2d4 !important;
+}
+table thead > tr > th {
+  background-color: #0089cf;
+  color: white;
+  font-size: 14px;
+  font-weight: lighter;
+  text-align: center;
+  border: 2px solid #d1d2d4 !important;
+}
+table .empty-column,
+table .img-column {
+  background-color: #e6e7e9;
+  border: 2px solid #e6e7e9 !important;
+  vertical-align: middle!important;
+}
+table .empty-column img,
+table .img-column img {
+  padding: 0 10px;
+}
+table tbody > tr > td {
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  border: 2px solid #d1d2d4 !important;
+}
+table tbody > tr > .highlight-column {
+  font-weight: bold;
+  background-color: #d8e9f1;
+  font-family: EatonBold, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 /* Classes Footer - Eaton */
 #footer {
   background: #eee;
   position: relative;
-  width: 922px;
+  width: 100%;
   padding: 19px;
   float: left;
+  border-top: 2px solid #0089cf;
 }
 #footer a {
   text-decoration: none;

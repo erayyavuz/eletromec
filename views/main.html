@@ -1,3 +1,34 @@
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<img src="img/banners/1.jpg" alt="Banner" width="100%" id="banner" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-8">
+				<p>
+					Fusíveis e Seccionadoras, Minidisjuntores, </br>
+					Interruptores diferenciais residuais, </br>
+					Protetores contra Surto, </br>
+					Disjuntores em caixa moldada.
+				</p>
+			</div>
+			<div class="col-xs-4">
+				<div class="banner-buttons">
+					<ul>
+						<li class="active" data-banner="1"></li>
+						<li data-banner="2"></li>
+						<li data-banner="3"></li>
+						<li data-banner="4"></li>
+						<li data-banner="5"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
 <section>
 	<div class="container bg-white">
 		<div class="row">
@@ -15,18 +46,20 @@
 </section>
 
 <section ng-repeat="item in itens" style="margin-bottom: 50px;">
-	<div class="container bg-gray">
+	<div class="container bg-gray-light">
 		<div class="row">
 			<div class="col-md-4">
 				<img src="{{ item.imagePath }}" alt="" />
 			</div>
 			<div class="col-md-6">
-				<h1>{{ item.title }}</h1>
-				<h3>{{ item.subTitle }}</h3>
-				<p>{{ item.description }}</p>
-				<ul>
-					<li ng-repeat="listItem in item.descriptionList">{{ listItem }}</li>
-				</ul>
+				<div class="content-group">
+					<h1>{{ item.title }}</h1>
+					<h3>{{ item.subTitle }}</h3>
+					<p style="margin-top: 20px;">{{ item.description }}</p>
+					<ul>
+						<li ng-repeat="listItem in item.descriptionList">{{ listItem }}</li>
+					</ul>
+				</div>
 			</div>
 			<div class="col-md-2">
 				<div class="more-details">
