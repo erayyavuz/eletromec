@@ -46,18 +46,20 @@
 </section>
 
 <section ng-repeat="item in itens" style="margin-bottom: 50px;">
-	<div class="container bg-gray-lighter">
+	<div class="container bg-gray-light">
 		<div class="row">
 			<div class="col-md-4">
 				<img src="{{ item.imagePath }}" alt="" />
 			</div>
 			<div class="col-md-6">
-				<h1>{{ item.title }}</h1>
-				<h3>{{ item.subTitle }}</h3>
-				<p>{{ item.description }}</p>
-				<ul>
-					<li ng-repeat="listItem in item.descriptionList">{{ listItem }}</li>
-				</ul>
+				<div class="content-group">
+					<h1>{{ item.title }}</h1>
+					<h3>{{ item.subTitle }}</h3>
+					<p style="margin-top: 20px;">{{ item.description }}</p>
+					<ul>
+						<li ng-repeat="listItem in item.descriptionList">{{ listItem }}</li>
+					</ul>
+				</div>
 			</div>
 			<div class="col-md-2">
 				<div class="more-details">
