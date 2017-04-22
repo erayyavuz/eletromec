@@ -262,6 +262,17 @@ table tbody > tr > .highlight-column {
   background-color: #d8e9f1;
   font-family: EatonBold, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
+table tbody > .highlight-row > td {
+  background-color: #d8e9f1;
+}
+table tbody > .highlight-row > td:last-child {
+  font-family: EatonBold, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+}
+table tbody > .highlight-row-gray > td:last-child {
+  font-family: EatonBold, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+}
 /* Classes Footer - Eaton */
 #footer {
   background: #eee;
