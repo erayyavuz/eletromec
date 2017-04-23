@@ -55,8 +55,8 @@
 				<div class="content-group">
 					<h1>{{ item.title }}</h1>
 					<h3>{{ item.subTitle }}</h3>
-					<p style="margin-top: 20px;">{{ item.description }}</p>
-					<ul>
+					<p style="margin-top: 20px;" ng-if="item.description">{{ item.description }}</p>
+					<ul style="margin-top: 10px;">
 						<li ng-repeat="listItem in item.descriptionList">{{ listItem }}</li>
 					</ul>
 				</div>
