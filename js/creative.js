@@ -1,4 +1,5 @@
-(function($) {
+
+setTimeout(function() {
     "use strict"; // start of use strict
 
     $('.banner-buttons ul li').on('click', function(){
@@ -22,5 +23,4 @@
             $(this).removeClass('active');
         });
     }
-
-})(jQuery); // end of use strict
+}, 0);
