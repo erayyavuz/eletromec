@@ -223,13 +223,26 @@ header {
 
 table {
 	margin: 20px 0 0 0!important;
+	thead > tr > th:first-child {
+		border-left: 0!important;
+	}
+	thead > tr > th:last-child {
+		border-right: 0!important;
+	}
+	tbody > tr > td:first-child {
+		border-left: 0!important;
+	}
+	tbody > tr > td:last-child {
+		border-right: 0!important;
+	}
 	thead > tr > th {
 		background-color: @theme-primary;
 		color: white;
 		font-size: 14px;
 		font-weight: lighter;
 		text-align: center;
-		border: 0!important;
+		border: 2px solid @gray!important;
+		border-top: 0!important;
 		vertical-align: middle!important;
 	}
 	tbody > tr > td {
@@ -275,7 +288,7 @@ table {
 	padding-left: 30px!important;
 }
 
-.elcm-table-bottom {
+.table-bottom {
 	border-left:0!important;
    	border-right: 0!important;
 	margin: 0!important;
@@ -287,18 +300,20 @@ table {
 		.gray-column {
 			background-color: @gray-dark;
 			padding: 3px 25px;
+			border: 0!important;
 			span {
 				color: white;
 				font-size: 18px;
 			}
 		}
-		.text-position-left {
-			text-align: left!important;
-			padding-left: 30px!important;
+		.white-column {
+			background-color: white;
+			padding: 3px 25px;
+			border: 0!important;
 		}
 		.header-column {
 			vertical-align: bottom!important;
-			border: 2px solid @gray-light!important;
+			border: 0!important;
 			padding: 80px 0 0 0!important;
 		}
 	}
@@ -307,6 +322,20 @@ table {
 .text-primary {
 	color: @theme-primary;
 	font-weight: bold;
+}
+
+.text-position-left {
+	text-align: left!important;
+	padding-left: 30px!important;
+}
+
+.vcenter {
+	display: flex;
+    align-items: center;
+}
+
+.black {
+	color: black!important;
 }
 
 /* Classes Footer - Eaton */

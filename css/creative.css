@@ -240,13 +240,26 @@ header .container .banner-buttons .active:hover {
 table {
   margin: 20px 0 0 0!important;
 }
+table thead > tr > th:first-child {
+  border-left: 0!important;
+}
+table thead > tr > th:last-child {
+  border-right: 0!important;
+}
+table tbody > tr > td:first-child {
+  border-left: 0!important;
+}
+table tbody > tr > td:last-child {
+  border-right: 0!important;
+}
 table thead > tr > th {
   background-color: #0089cf;
   color: white;
   font-size: 14px;
   font-weight: lighter;
   text-align: center;
-  border: 0!important;
+  border: 2px solid #d1d2d4 !important;
+  border-top: 0!important;
   vertical-align: middle!important;
 }
 table tbody > tr > td {
@@ -292,35 +305,48 @@ table tbody > .highlight-row-gray > td:last-child {
   text-align: left;
   padding-left: 30px!important;
 }
-.elcm-table-bottom {
+.table-bottom {
   border-left: 0!important;
   border-right: 0!important;
   margin: 0!important;
 }
-.elcm-table-bottom tbody > tr td {
+.table-bottom tbody > tr td {
   border-left: 0!important;
   border-right: 0!important;
 }
-.elcm-table-bottom tbody > tr .gray-column {
+.table-bottom tbody > tr .gray-column {
   background-color: #808285;
   padding: 3px 25px;
+  border: 0!important;
 }
-.elcm-table-bottom tbody > tr .gray-column span {
+.table-bottom tbody > tr .gray-column span {
   color: white;
   font-size: 18px;
 }
-.elcm-table-bottom tbody > tr .text-position-left {
-  text-align: left!important;
-  padding-left: 30px!important;
+.table-bottom tbody > tr .white-column {
+  background-color: white;
+  padding: 3px 25px;
+  border: 0!important;
 }
-.elcm-table-bottom tbody > tr .header-column {
+.table-bottom tbody > tr .header-column {
   vertical-align: bottom!important;
-  border: 2px solid #e6e7e9 !important;
+  border: 0!important;
   padding: 80px 0 0 0!important;
 }
 .text-primary {
   color: #0089cf;
   font-weight: bold;
+}
+.text-position-left {
+  text-align: left!important;
+  padding-left: 30px!important;
+}
+.vcenter {
+  display: flex;
+  align-items: center;
+}
+.black {
+  color: black!important;
 }
 /* Classes Footer - Eaton */
 #footer {
