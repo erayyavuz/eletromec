@@ -1,4 +1,4 @@
-var app = angular.module('eletromec', ['ngRoute']);
+var app = angular.module('eletromec', ['ngSanitize','ngRoute']);
 
 app.config(['$routeProvider','$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider

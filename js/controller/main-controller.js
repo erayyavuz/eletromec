@@ -3,7 +3,7 @@ app.controller('initialPageController', function($scope) {
         {
             title: 'Linha ELCM',
             subTitle: 'Disjuntores em Caixa Moldada',
-            description: 'A linha de disjuntores em caixa moldada ELCM é um novo </br> desenvolvido com base em normas internacionais, </br> avançada e novo design.',
+            description: 'A linha de disjuntores em caixa moldada ELCM é um novo <br> desenvolvido com base em normas internacionais, <br> avançada e novo design.',
             imagePath: 'img/inicial/ELCM.jpg',
             pageLink: '#elcm'
         },
