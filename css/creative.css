@@ -15,6 +15,7 @@ hr.light {
   border-color: white;
 }
 a {
+  cursor: pointer;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -347,6 +348,64 @@ table tbody > .highlight-row-gray > td:last-child {
 }
 .black {
   color: black!important;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  cursor: pointer;
+}
+.nav-elements {
+  margin-top: 40px;
+}
+.dropdown-menu {
+  background-color: #e6e7e9;
+  top: 27px;
+  padding: 10px 0;
+  border-radius: 0;
+  border-top: 0;
+}
+.dropdown-menu li {
+  padding: 0 15px;
+}
+.dropdown-menu li > a {
+  color: #0067cd;
+  font-size: 14px;
+}
+.dropdown-menu li > a:hover {
+  text-decoration: underline;
+  background-color: #e6e7e9;
+  color: #0067cd;
+}
+.dropdown-menu li > .title,
+.dropdown-menu li > .title:hover {
+  background-color: #0067cd;
+  color: white;
+  font-family: EatonMed;
+}
+.dropdown-menu li > .secundary-title,
+.dropdown-menu li > .secundary-title:hover {
+  background-color: #d1d2d4;
+  color: #0067cd;
+  font-family: EatonMed;
+}
+.dropdown-button {
+  padding: 10px 20px;
+}
+.dropdown-button span {
+  font-size: 16px;
+}
+.dropdown-button:hover,
+.btn-selected {
+  text-decoration: none;
+  background-color: #e6e7e9;
+  color: #57585a;
+}
+.divider {
+  background-color: #0089cf;
+  width: 1px;
+  height: 37px;
+  float: left;
+  margin-top: -7px;
 }
 /* Classes Footer - Eaton */
 #footer {

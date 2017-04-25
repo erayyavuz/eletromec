@@ -23,6 +23,7 @@ hr.light {
 }
 
 a {
+	cursor: pointer;
     .transition-all;
     color: @theme-primary;
     &:hover,
@@ -338,6 +339,67 @@ table {
 	color: black!important;
 }
 
+.dropdown:hover .dropdown-menu {
+	display: block;
+	margin-top: 0; // remove the gap so it doesn't close
+	cursor: pointer;
+ }
+
+.nav-elements {
+	margin-top: 40px;
+}
+
+.dropdown-menu {
+	background-color: @gray-light;
+	top: 27px;
+	padding: 10px 0;
+	border-radius: 0;
+	border-top: 0;
+	li {
+		padding: 0 15px;
+	}
+	li > a {
+		color: @theme-primary-light;
+		font-size: 14px;
+	}
+	li > a:hover {
+		text-decoration: underline;
+		background-color: @gray-light;
+		color: @theme-primary-light;
+	}
+	li > .title, li > .title:hover {
+		background-color: @theme-primary-light;
+		color: white;
+		font-family: EatonMed;
+	}
+	li > .secundary-title, li > .secundary-title:hover {
+		background-color: @gray;
+		color: @theme-primary-light;
+		font-family: EatonMed;
+	}
+}
+
+.dropdown-button {
+	padding: 10px 20px;
+	span {
+ 		font-size: 16px;
+	}
+}
+
+.dropdown-button:hover, .btn-selected {
+	text-decoration: none;
+	background-color: @gray-light;
+	color: @gray-darker;
+}
+
+.divider {
+	background-color: @theme-primary;
+	width: 1px;
+	height: 37px;
+	float: left;
+	margin-top: -7px;
+}
+
 /* Classes Footer - Eaton */
 
 #footer {
@@ -351,7 +413,7 @@ table {
 
 #footer a {
     text-decoration: none;
-    color: #0067cd;
+    color: @theme-primary-light;
     line-height: 17px;
 }
 

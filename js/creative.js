@@ -23,4 +23,18 @@ setTimeout(function() {
             $(this).removeClass('active');
         });
     }
+
+	// Events to enabled or disabled the dropdown button
+	$('#product-button').mouseenter(function(){
+		$(this).addClass("btn-selected");
+	}).mouseleave(function(){
+		if( $($('.dropdown-menu')[0]).is(':visible') === false ){
+			$('#product-button').removeClass('btn-selected');
+		}
+	});
+
+	$($('.dropdown-menu')[0]).mouseleave(function(){
+		$('#product-button').removeClass('btn-selected');
+	});
+
 }, 0);

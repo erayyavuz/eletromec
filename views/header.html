@@ -1,84 +1,36 @@
-<!-- <section>
-
-<div id="header-gray-bar">
-
-	<div>
-		<ul class="nav nav-pills">
-			<li class="active"><a href="#">Contado</a></li>
-			<li><a href="#">Site EatonBR</a></li>
-		</ul>	
-	</div>
-
-	<div id="headerLinks">
-		<span class="sigin_left"></span>
-		<span class="SignIn">
-			<a target="" href="/EatonBR/OurCompany/AboutUs/ContactUs/index.htm">
-				<span id="result_box" lang="pt" class="short_text">
-					<span class="hps" title="Click for alternate translations">Contato</span>
-				</span>
-			</a>
-		</span>
-		<span class="sigin_right"></span>
-	</div>
-
-	<div id="worldwide">
-		<span class="worldwide_left"></span>
-		<span class="WorldwideSite">
-			<span class="worldMap"></span> 
-			<a target="" href="http://www.eaton.com.br/EatonBR/index.htm">
-				<span id="result_box" lang="pt" class="short_text">
-					<span class="hps" title="Site EatonBR">Site EatonBR</span>
-				</span>
-			</a>
-		</span>
-		<span class="worldwide_right"></span>
-	</div>
-</div>
-</section> -->
-<section>
-	<div class="container">
+<nav>
+	<div class="container" style="margin-bottom: 0; padding: 10px 0 0 0;">
 		<div class="row">
-			<div class="col-xs-12">
-				<div id="globalnavholder">
-					<dl class="dropdownWHITE">
-						<dt id="dt0-ddheader" onmouseover="ddMenu('dt0',1); hideDropdowns();" onmouseout="ddMenu('dt0',-1); showDropdowns();"><a href="/EatonBR/ProductsSolutions/index.htm" class="" id="first"><span>Nossos Produtos</span></a></dt>
-						<dd id="dt0-ddcontent" onmouseover="cancelHide('dt0'); hideDropdowns();" onmouseout="ddMenu('dt0'); showDropdowns();" style="display: block; height: 0px; opacity: 0;">
-							<div class="BNLcontainer">
-								<div class="subwrapper1a">
-									<ul class="sub">
-										<li><a class="MegaDropColMajorHeading" href="#">Linha Eletromec</a></li>
-										<li><a href="">Fusível Cartucho</a></li>
-										<li><a href="">Fusível NH</a></li>
-										<li><a href="">Linha ELCM</a></li>
-										<li><a href="">Linha ELDR</a></li>
-										<li><a href="">Linha ELMD</a></li>
-										<li><a href="">Linha ELPS</a></li>
-										<li><a class="ViewAllLink" href="http://www.eaton.com.br/EatonBR/ProductsSolutions/index.htm" target="_blank">Veja todos os nossos produtos</a></li>
-									</ul>
-								</div>
-							</div>
-						</dd>
-					</dl>
-					<dl class="dropdownWHITE">
-						<dt id="dt2-ddheader" onmouseover="ddMenu('dt2',1); hideDropdowns();" onmouseout="ddMenu('dt2',-1); showDropdowns();"><a href="/EatonBR/OurCompany/index.htm" class="" id="last"><span>Nossa Empresa</span></a></dt>
-						<dd id="dt2-ddcontent" onmouseover="cancelHide('dt2'); hideDropdowns();" onmouseout="ddMenu('dt2'); showDropdowns();" style="display: block; height: 0px; opacity: 0;">
-							<div class="subwrapper">
-								<ul class="sub">
-									<li><a href="http://www.eaton.com.br/EatonBR/OurCompany/AboutUs/index.htm" target="_blank">Quem Somos</a></li>
-									<li><a href="http://www.eaton.com.br/EatonBR/OurCompany/NewsEvents/index.htm" target="_blank">Notícias &amp; Eventos</a></li>
-									<li><a href="http://www.eaton.com.br/EatonBR/OurCompany/Operations/index.htm" target="_blank">Operações</a></li>
-									<li><a href="http://www.eaton.com.br/EatonBR/OurCompany/ServiceProvider/index.htm" target="_blank">Serviço ao Fornecedor</a></li>
-									<li><a href="http://www.eaton.com.br/EatonBR/OurCompany/WorkatEaton/index.htm" target="_blank">Trabalhe na Eaton</a></li>
-									<li><a href="http://www.eaton.com.br/EatonBR/OurCompany/CorporateVideos/index.htm" target="_blank">Vídeos de visão geral corporativa</a></li>
-									<li><a href="http://www.eaton.com.br/EatonBR/OurCompany/CorporateResponsibility/index.htm" target="_blank">Responsabilidade Corporativa</a></li>
-									<li><a href="http://www.eaton.com.br/EatonBR/OurCompany/Sustainability/index.htm" target="_blank">Sustentabilidade </a></li>
-									<li><a href="http://www.eaton.com.br/EatonBR/OurCompany/WorkatEaton/InclusaoeDiversidade/index.htm" target="_blank">Inclusão e Diversidade</a></li>
-								</ul>
-							</div>
-						</dd>
-					</dl>
+			<div class="col-xs-3">
+				<a href="/">
+					<img src="../img/logo.png" alt="Logotipo Eletromec" height="70px" />
+				</a>
+			</div>
+			<div class="col-xs-6">
+				<div class="nav-elements">
+					<div class="dropdown" style="float: left;">
+				    	<a data-toggle="dropdown" class="dropdown-button" id="product-button">
+							<span>Nossos Produtos</span>
+						</a>
+					    <ul class="dropdown-menu">
+							<li><a href="/" class="title">Linha Eletromec</a></li>
+							<li><a href="#fusivel_cartucho">FusÃ­vel Cartucho</a></li>
+							<li><a href="#fusivel_nh">FusÃ­vel NH</a></li>
+							<li><a href="#elcm">Linha ELCM</a></li>
+							<li><a href="#eldr">Linha ELDR</a></li>
+							<li><a href="#elmd">Linha ELMD</a></li>
+							<li><a href="#elps">Linha ELPS</a></li>
+						  	<li><a class="secundary-title" href="http://www.eaton.com.br/EatonBR/ProductsSolutions/index.htm" target="_blank">ConheÃ§a todos os nossos produtos</a></li>
+					    </ul>
+				  	</div>
+					<div class="divider"></div>
+					<div class="dropdown" style="float: left;">
+				    	<a class="dropdown-button" href="http://www.eaton.com.br/EatonBR/OurCompany/index.htm" target="_blank">
+							<span>Nossa Empresa</span>
+						</a>
+				  	</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</section>
+</nav>
