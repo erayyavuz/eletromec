@@ -367,26 +367,26 @@ table tbody > .highlight-row-gray > td:last-child {
 .dropdown-menu li {
   padding: 0 15px;
 }
-.dropdown-menu li > a {
-  color: #0067cd;
-  font-size: 14px;
-}
-.dropdown-menu li > a:hover {
-  text-decoration: underline;
-  background-color: #e6e7e9;
-  color: #0067cd;
-}
-.dropdown-menu li > .title,
-.dropdown-menu li > .title:hover {
+.dropdown-menu li .title,
+.dropdown-menu li .title:hover {
   background-color: #0067cd;
   color: white;
   font-family: EatonMed;
 }
-.dropdown-menu li > .secundary-title,
-.dropdown-menu li > .secundary-title:hover {
+.dropdown-menu li .secundary-title,
+.dropdown-menu li .secundary-title:hover {
   background-color: #d1d2d4;
   color: #0067cd;
   font-family: EatonMed;
+}
+.dropdown-menu li a {
+  color: #0067cd;
+  font-size: 14px;
+}
+.dropdown-menu li a:hover {
+  text-decoration: underline;
+  background-color: #e6e7e9;
+  color: #0067cd;
 }
 .dropdown-button {
   padding: 10px 20px;
