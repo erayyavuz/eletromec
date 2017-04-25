@@ -2,7 +2,7 @@
 setTimeout(function() {
     "use strict"; // start of use strict
 
-    $('.banner-buttons ul li').on('click', function(){
+    $(document).on('click', '.banner-buttons ul li', function(){
         // get the actual banner on the page
         var currentImage = $(this).attr('data-banner');
         // set default path to images
@@ -35,6 +35,5 @@ setTimeout(function() {
 
 	$($('.dropdown-menu')[0]).mouseleave(function(){
 		$('#product-button').removeClass('btn-selected');
-	});
-
+	});    
 }, 0);
