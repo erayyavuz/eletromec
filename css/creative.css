@@ -131,7 +131,7 @@ header .container .banner-buttons ul > li {
   list-style-type: none;
   display: inline;
   background-color: #eeeeee;
-  padding: 1px 10px;
+  padding: 0px 9px;
   margin-right: 5px;
   cursor: pointer;
   transition: all 0.5s;
