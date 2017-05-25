@@ -1,4 +1,3 @@
-
 setTimeout(function() {
     "use strict"; // start of use strict
 
@@ -11,6 +10,11 @@ setTimeout(function() {
         $('#banner').fadeOut(function(){
             $(this).attr('src', path + currentImage + '.jpg');
             $(this).fadeIn();
+			if(currentImage==='6') {
+				$('#mailto-banner').attr('href', 'mailto:faleconosco@eaton.com?subject=Tech Móvel Eaton 2017');
+			} else {
+				$('#mailto-banner').attr('href', '#');
+			}
         });
         // remove the style of current active item
         removeActiveItens();
